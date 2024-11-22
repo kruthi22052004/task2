@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        /* Add some basic styles */
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        form { margin-bottom: 20px; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin-bottom: 10px; display: flex; justify-content: space-between; }
+        button { margin-left: 10px; }
+    </style>
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <!-- Form to Add Tasks -->
+    <form id="task-form">
+        <input type="text" id="task-name" placeholder="Task Name" required />
+        <textarea id="task-desc" placeholder="Task Description" required></textarea>
+        <button type="submit">Add Task</button>
+    </form>
+
+    <!-- Task List -->
+    <ul id="task-list"></ul>
+
+    <script src="app.js"></script>
+</body>
+</html>
